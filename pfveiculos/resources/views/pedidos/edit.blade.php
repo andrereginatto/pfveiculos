@@ -35,12 +35,12 @@
 
         <div class="form-group">
             {!! Form::label('vendedor_id', 'Vendedor') !!}
-            {{ Form::select('vendedor_id', \App\Vendedor::orderBy('nome')->pluck('nome', 'id')->toArray(), $pedido->vendedor_id, ['class'=>'form-control']) }}
+            {{ Form::select('vendedor_id', \App\Vendedor::orderBy('nome')->pluck('nome', 'id')->toArray(), $pedido->vendedor_id, ['class'=>'form-control','required']) }}
         </div>
 
         <div class="form-group">
             {!! Form::label('cliente_id', 'Cliente') !!}
-            {{ Form::select('cliente_id', \App\Cliente::orderBy('nome')->pluck('nome', 'id')->toArray(), $pedido->cliente_id, ['class'=>'form-control']) }}
+            {{ Form::select('cliente_id', \App\Cliente::orderBy('nome')->pluck('nome', 'id')->toArray(), $pedido->cliente_id, ['class'=>'form-control','required']) }}
         </div>
 
         <div class="form-group">
