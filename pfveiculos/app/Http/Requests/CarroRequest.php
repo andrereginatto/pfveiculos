@@ -24,7 +24,7 @@ class CarroRequest extends FormRequest
     public function rules()
     {
         return [
-            'modelo' => 'required|min:2|max:20',
+            'modelo' => 'required|min:2|max:30',
             'cor' => 'required|min:3',
             'ano' => 'required|numeric|digits:4',
             'ano_modelo' => 'required|numeric|digits:4',
