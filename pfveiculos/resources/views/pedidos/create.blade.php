@@ -35,7 +35,7 @@
 
         <div class="form-group">
             {!! Form::label('vendedor_id', 'Vendedor') !!}
-            {{ Form::select('vendedor_id', \App\Vendedor::orderBy('nome')->pluck('nome', 'id')->toArray(), null, ['class'=>'form-control']) }}
+            {{ Form::select('vendedor_id', \App\Vendedor::orderBy('nome')->pluck('nome', 'id')->toArray(), null, ['class'=>'form-control','required']) }}
         </div>
 
         <div class="form-group">
