@@ -24,8 +24,8 @@ class VendedorRequest extends FormRequest
     public function rules()
     {
         return [
-            'nome' => 'required|min:3',
-            'sobrenome' => 'required|min:3',
+            'nome' => 'required|min:3|max:30',
+            'sobrenome' => 'required|min:3|max:30',
             'cpf' => 'required',
             'telefone' => 'required',
             'aniver' => 'required',
